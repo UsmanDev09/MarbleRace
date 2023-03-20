@@ -1,0 +1,120 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css');
+
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(255, 240, 246);
+}
+
+.content-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.content-embed {
+  position: relative;
+  background: white;
+  border-radius: 37.5px;
+  width: 375px;
+  height: 825px;
+  overflow: scroll;
+}
+
+.embed {
+  width:1000px;
+  height: 600px;
+}
+
+canvas {
+  position: absolute;
+}
+
+.interface{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.time{
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 100%;
+  color: white;
+  font-size: 6vh;
+  background-color: #00000033 ;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.restart{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  color: white;
+  font-size: 80px;
+  background: #00000033;
+  padding-top: 10px;
+  pointer-events: auto;
+  cursor: pointer;;
+}
+
+.controls{
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+}
+
+.controls .raw{
+  display: flex;
+  justify-content: center;
+}
+
+.controls .key{
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff44;
+}
+
+.controls .key.large {
+  width: 144px;
+}
+
+.controls .key.active {
+  background-color: #ffffff99;
+}
