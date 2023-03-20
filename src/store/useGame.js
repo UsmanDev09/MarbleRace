@@ -4,7 +4,7 @@ import {subscribeWithSelector} from 'zustand/middleware'
 export default create(
   subscribeWithSelector((set) => {
     return {
-      blocksCount: 3,
+      blocksCount: 15,
       blocksSeed: 0,
       startTime: 0,
       endTime: 0,
