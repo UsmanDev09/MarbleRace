@@ -19,7 +19,7 @@ const PhysicsComponent = () => {
 <color args={ [ '#252731' ] } attach="background" />
       <Physics>
         <Lights />
-        <Debug />
+        {/* <Debug /> */}
         <Level count={blocksCount} seed={blocksSeed} />
         <Player />
       </Physics>
